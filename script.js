@@ -5,7 +5,6 @@ let playlist = {
         { title: "Song 3", artist: "Artist 3", isPlaying: false }
     ],
     playSong: function(title) {
-        // Your code here using 'this'
         for(let song of this.songs){
             if(song.title === title){
                 song.isPlaying = true;
@@ -15,7 +14,6 @@ let playlist = {
         }
     },
     getCurrentlyPlayingSong: function() {
-        // Your code here using 'this'
         for(let song of this.songs){
             if(song.isPlaying === true){
                 return song.title;
